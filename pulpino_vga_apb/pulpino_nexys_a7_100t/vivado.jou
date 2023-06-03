@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun  2 13:16:59 2023
+# Process ID: 9116
+# Current directory: D:/University/pulpino_vga_apb/pulpino_nexys_a7_100t
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7684 D:\University\pulpino_vga_apb\pulpino_nexys_a7_100t\pulpino_nexys_a7_100t.xpr
+# Log file: D:/University/pulpino_vga_apb/pulpino_nexys_a7_100t/vivado.log
+# Journal file: D:/University/pulpino_vga_apb/pulpino_nexys_a7_100t\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/University/pulpino_vga_apb/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+create_run synth_2 -flow {Vivado Synthesis 2019}
+launch_runs synth_2 -jobs 4
+wait_on_run synth_2
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+reset_run synth_1
+current_run [get_runs synth_2]
+delete_runs "synth_1"
+launch_runs impl_2 -jobs 3
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 3
+wait_on_run impl_2
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/University/pulpino_vga_apb/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.runs/impl_2/pulpino_nexys_a7.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/University/pulpino_vga_apb/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.runs/impl_2/pulpino_nexys_a7.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

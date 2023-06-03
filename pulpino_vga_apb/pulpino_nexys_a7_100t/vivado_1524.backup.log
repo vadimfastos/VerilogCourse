@@ -1,0 +1,1345 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Apr 11 14:40:58 2023
+# Process ID: 1524
+# Current directory: D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8756 D:\Documents\University\fpga\lab4\pulpino_students\pulpino_nexys_a7_100t\pulpino_nexys_a7_100t.xpr
+# Log file: D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/vivado.log
+# Journal file: D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Programs/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 724.355 ; gain = 136.434
+update_compile_order -fileset sources_1
+generate_target all [get_files D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xilinx_mmcm'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xilinx_mmcm'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xilinx_mmcm'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'xilinx_mmcm'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xilinx_mmcm'...
+export_ip_user_files -of_objects [get_files D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.xci] -directory D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.ip_user_files/sim_scripts -ip_user_files_dir D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.ip_user_files -ipstatic_source_dir D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.cache/compile_simlib/modelsim} {questa=D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.cache/compile_simlib/questa} {riviera=D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.cache/compile_simlib/riviera} {activehdl=D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_fileset -blockset xilinx_mmcm
+set_property top xilinx_mmcm [get_fileset xilinx_mmcm]
+move_files -fileset [get_fileset xilinx_mmcm] [get_files -of_objects [get_fileset sources_1] D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.xci]
+launch_run xilinx_mmcm_synth_1
+[Tue Apr 11 14:47:30 2023] Launched xilinx_mmcm_synth_1...
+Run output will be captured here: D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.runs/xilinx_mmcm_synth_1/runme.log
+wait_on_run xilinx_mmcm_synth_1
+
+[Tue Apr 11 14:47:30 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:47:35 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:47:40 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:47:45 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:47:55 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:48:05 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:48:15 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:48:25 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:48:45 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+[Tue Apr 11 14:49:05 2023] Waiting for xilinx_mmcm_synth_1 to finish...
+
+*** Running vivado
+    with args -log xilinx_mmcm.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xilinx_mmcm.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xilinx_mmcm.tcl -notrace
+Command: synth_design -top xilinx_mmcm -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9588 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 862.895 ; gain = 233.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xilinx_mmcm' [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.v:70]
+INFO: [Synth 8-6157] synthesizing module 'xilinx_mmcm_clk_wiz' [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Programs/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Programs/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Programs/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 20.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Programs/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Programs/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Programs/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'xilinx_mmcm_clk_wiz' (4#1) [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xilinx_mmcm' (5#1) [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 936.668 ; gain = 307.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 936.668 ; gain = 307.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 936.668 ; gain = 307.586
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 936.668 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm_board.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm_board.xdc] for cell 'inst'
+Parsing XDC File [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xilinx_mmcm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xilinx_mmcm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.runs/xilinx_mmcm_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.runs/xilinx_mmcm_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 951.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 951.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 951.445 ; gain = 322.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 951.445 ; gain = 322.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.runs/xilinx_mmcm_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 951.445 ; gain = 322.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 951.445 ; gain = 322.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 951.445 ; gain = 322.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 989.871 ; gain = 360.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 989.871 ; gain = 360.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 999.418 ; gain = 370.336
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1015.223 ; gain = 386.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1015.223 ; gain = 386.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1015.223 ; gain = 386.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1015.223 ; gain = 386.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1015.223 ; gain = 386.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1015.223 ; gain = 386.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |MMCME2_ADV |     1|
+|3     |IBUF       |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------+--------------------+------+
+|      |Instance |Module              |Cells |
++------+---------+--------------------+------+
+|1     |top      |                    |     4|
+|2     |  inst   |xilinx_mmcm_clk_wiz |     4|
++------+---------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1015.223 ; gain = 386.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:59 . Memory (MB): peak = 1015.223 ; gain = 371.363
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:05 . Memory (MB): peak = 1015.223 ; gain = 386.141
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.223 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1036.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1036.391 ; gain = 696.906
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1036.391 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.runs/xilinx_mmcm_synth_1/xilinx_mmcm.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP xilinx_mmcm, cache-ID = e397447a626e9f26
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1036.391 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.runs/xilinx_mmcm_synth_1/xilinx_mmcm.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xilinx_mmcm_utilization_synth.rpt -pb xilinx_mmcm_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 14:49:07 2023...
+[Tue Apr 11 14:49:10 2023] xilinx_mmcm_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:11 ; elapsed = 00:01:40 . Memory (MB): peak = 797.746 ; gain = 16.410
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Programs/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulpino_nexys_a7_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/test_sw_emb_text.dat'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/test_sw_emb_data.dat'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/boot_code.dat'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/keys.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/S_box.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/S_box_inverted.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_16.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_32.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_133.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_148.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_192.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_194.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_251.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pulpino_nexys_a7_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/config.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_mmcm_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_mmcm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_crc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_crc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_tap_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_tap_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_data_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_data_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_full_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_full_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_token_ring.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_token_ring
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_token_ring_fifo_din.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_token_ring_fifo_din
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_token_ring_fifo_dout.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_token_ring_fifo_dout
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/xilinx_spram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/config.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_axi_biu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_axi_biu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_axi_module.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_axi_module
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_biu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_or1k_biu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_module.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_or1k_module
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_status_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_or1k_status_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adv_dbg_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adv_dbg_if
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb2per/apb2per.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb2per
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_event_unit/apb_event_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_event_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_fll_if/apb_fll_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_fll_if
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_gpio/apb_gpio.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_gpio
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_i2c/apb_i2c.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_i2c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_node/apb_node.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_node
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_node/apb_node_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_node_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_pulpino/apb_pulpino.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'REG_STATUS' redefined [D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_pulpino/apb_pulpino.sv:16]
+INFO: [VRFC 10-311] analyzing module apb_pulpino
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_spi_master/apb_spi_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apb_spi_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_timer/apb_timer.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'REGS_MAX_ADR' redefined [D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_timer/apb_timer.sv:11]
+INFO: [VRFC 10-311] analyzing module apb_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/include/apu_core_package.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi2apb/axi2apb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi2apb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi2apb/axi2apb32.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi2apb32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi2apb_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi2apb_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_AR_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_AR_allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_AW_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_AW_allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_ArbitrationTree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ArbitrationTree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_BR_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_BR_allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_BW_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_BW_allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_DW_allocator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_DW_allocator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_FanInPrimitive_Req.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_FanInPrimitive_Req
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_RR_Flag_Req.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_RR_Flag_Req
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_address_decoder_AR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_address_decoder_AR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_address_decoder_AW.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_address_decoder_AW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_address_decoder_BR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_address_decoder_BR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_address_decoder_BW.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_address_decoder_BW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_address_decoder_DW.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_address_decoder_DW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice/axi_ar_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ar_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice/axi_aw_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_aw_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice/axi_b_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_b_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_mem_if_DP/axi_mem_if_SP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_mem_if_SP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_mem_if_SP_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_mem_if_SP_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_multiplexer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_multiplexer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_node.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_node
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_node_intf_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_node_intf_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice/axi_r_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_r_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_mem_if_DP/axi_read_only_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_read_only_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_request_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_request_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_node/axi_response_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_response_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice/axi_slice.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_slice_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_slice_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/axi_spi_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_spi_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_spi_slave_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_spi_slave_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice/axi_w_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_w_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_mem_if_DP/axi_write_only_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_write_only_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/boot_code.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module boot_code
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/boot_rom_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module boot_rom_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/clk_rst_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_rst_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/components/cluster_clock_gating.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cluster_clock_gating
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/components/cluster_clock_inverter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cluster_clock_inverter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/components/cluster_clock_mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cluster_clock_mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/core2axi/core2axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core2axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/core2axi_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core2axi_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/core_region.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_region
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/debug_bus.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/components/generic_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module generic_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_event_unit/generic_service_unit.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'REGS_MAX_ADR' redefined [../../../../../submodules/apb/apb_event_unit/include/defines_event_unit.sv:31]
+INFO: [VRFC 10-311] analyzing module generic_service_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_i2c/i2c_master_bit_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_master_bit_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_i2c/i2c_master_byte_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module i2c_master_byte_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/instr_ram_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_ram_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/periph_bus_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module periph_bus_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/peripherals.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module peripherals
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/components/pulp_clock_inverter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulp_clock_inverter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/components/pulp_clock_mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulp_clock_mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/pulpino_nexys_a7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulpino_nexys_a7
+INFO: [VRFC 10-2458] undeclared symbol ck_scl, assumed default net type wire [D:/Documents/University/fpga/lab4/pulpino_students/rtl/pulpino_nexys_a7.sv:90]
+INFO: [VRFC 10-2458] undeclared symbol ck_sda, assumed default net type wire [D:/Documents/University/fpga/lab4/pulpino_students/rtl/pulpino_nexys_a7.sv:91]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/pulpino_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulpino_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/ram_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_L0_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_L0_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/include/riscv_defines.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_alu
+INFO: [VRFC 10-311] analyzing module alu_ff
+INFO: [VRFC 10-311] analyzing module alu_popcnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_alu_div.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_alu_div
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_apu_disp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_apu_disp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_compressed_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_compressed_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_cs_registers.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_cs_registers
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_debug_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_debug_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_ex_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_ex_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_fetch_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_fetch_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_hwloop_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_hwloop_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_hwloop_regs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_hwloop_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_id_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_id_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_if_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_if_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_int_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_int_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_load_store_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_load_store_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_mult.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_mult
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_prefetch_L0_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_prefetch_L0_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_prefetch_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_prefetch_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/riscv/riscv_register_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/components/rstgen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rstgen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_event_unit/sleep_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sleep_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/sp_ram_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_spi_master/spi_master_apb_if.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'REG_STATUS' redefined [D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_spi_master/spi_master_apb_if.sv:13]
+INFO: [VRFC 10-311] analyzing module spi_master_apb_if
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_master/spi_master_clkgen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_clkgen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_master/spi_master_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_master/spi_master_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_master/spi_master_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_master/spi_master_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_axi_plug.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_axi_plug
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_cmd_parser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_cmd_parser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_controller.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'SPI_QUAD_TX' redefined [D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_controller.sv:13]
+WARNING: [VRFC 10-3507] macro 'SPI_QUAD_RX' redefined [D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_controller.sv:14]
+INFO: [VRFC 10-311] analyzing module spi_slave_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_dc_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_dc_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_regs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_syncro.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_syncro
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_spi_slave/spi_slave_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_slave_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_timer/timer.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'REGS_MAX_IDX' redefined [D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_timer/timer.sv:13]
+INFO: [VRFC 10-311] analyzing module timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/include/zeroriscy_defines.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_compressed_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_compressed_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_cs_registers.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_cs_registers
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_debug_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_debug_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_ex_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_ex_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_fetch_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_fetch_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_id_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_id_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_if_stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_if_stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_int_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_int_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_load_store_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_load_store_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_multdiv_fast.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_multdiv_fast
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_multdiv_slow.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_multdiv_slow
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_prefetch_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_prefetch_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/zero-riscy/zeroriscy_register_file_ff.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module zeroriscy_register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/tb/pulpino_nexys_a7_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulpino_nexys_a7_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj pulpino_nexys_a7_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/apb_uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apb_uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/slib_clock_div.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'slib_clock_div'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/slib_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'slib_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/slib_edge_detect.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'slib_edge_detect'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/slib_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'slib_fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/slib_input_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'slib_input_filter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/slib_input_sync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'slib_input_sync'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/slib_mv_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'slib_mv_filter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/uart_baudgen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_baudgen'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/uart_interrupt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_interrupt'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/uart_receiver.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_receiver'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_uart/uart_transmitter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart_transmitter'
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:26 . Memory (MB): peak = 797.746 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '26' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+"xelab -wto 6605eff7ee774639a38cbda8a993628f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pulpino_nexys_a7_tb_behav xil_defaultlib.pulpino_nexys_a7_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6605eff7ee774639a38cbda8a993628f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pulpino_nexys_a7_tb_behav xil_defaultlib.pulpino_nexys_a7_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'cpu_clk_i' is not connected on this instance [D:/Documents/University/fpga/lab4/pulpino_students/rtl/core_region.sv:567]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adv_dbg_if.sv" Line 16. Module adv_dbg_if(NB_CORES=1,AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_ID_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_top.sv" Line 44. Module adbg_top(NB_CORES=1,AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_ID_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_axi_module.sv" Line 69. Module adbg_axi_module(AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_ID_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_axi_biu.sv" Line 66. Module adbg_axi_biu(AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_ID_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_module.sv" Line 69. Module adbg_or1k_module(NB_CORES=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_status_reg.sv" Line 68. Module adbg_or1k_status_reg(NB_CORES=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_biu.sv" Line 59. Module adbg_or1k_biu(NB_CORES=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_gpio/apb_gpio.sv" Line 29. Module apb_gpio doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_event_unit/apb_event_unit.sv" Line 13. Module apb_event_unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_fll_if/apb_fll_if.sv" Line 11. Module apb_fll_if doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb2per/apb2per.sv" Line 28. Module apb2per(PER_ADDR_WIDTH=15) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.riscv_defines
+Compiling package xil_defaultlib.zeroriscy_defines
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.xilinx_mmcm_clk_wiz
+Compiling module xil_defaultlib.xilinx_mmcm
+Compiling module xil_defaultlib.AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID...
+Compiling module xil_defaultlib.AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID...
+Compiling module xil_defaultlib.DEBUG_BUS
+Compiling module xil_defaultlib.cluster_clock_mux2
+Compiling module xil_defaultlib.rstgen
+Compiling module xil_defaultlib.clk_rst_gen
+Compiling module xil_defaultlib.cluster_clock_gating
+Compiling module xil_defaultlib.zeroriscy_fetch_fifo
+Compiling module xil_defaultlib.zeroriscy_prefetch_buffer
+Compiling module xil_defaultlib.zeroriscy_compressed_decoder
+Compiling module xil_defaultlib.zeroriscy_if_stage
+Compiling module xil_defaultlib.zeroriscy_register_file_default
+Compiling module xil_defaultlib.zeroriscy_decoder
+Compiling module xil_defaultlib.zeroriscy_controller_1
+Compiling module xil_defaultlib.zeroriscy_int_controller
+Compiling module xil_defaultlib.zeroriscy_id_stage
+Compiling module xil_defaultlib.zeroriscy_alu
+Compiling module xil_defaultlib.zeroriscy_multdiv_fast
+Compiling module xil_defaultlib.zeroriscy_ex_block_default
+Compiling module xil_defaultlib.zeroriscy_load_store_unit
+Compiling module xil_defaultlib.zeroriscy_cs_registers_default
+Compiling module xil_defaultlib.zeroriscy_debug_unit
+Compiling module xil_defaultlib.zeroriscy_core_default
+Compiling module xil_defaultlib.core2axi(AXI4_ID_WIDTH=2,AXI4_US...
+Compiling module xil_defaultlib.core2axi_wrap(AXI_USER_WIDTH=1,A...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=64,DATA_...
+Compiling module xil_defaultlib.axi_aw_buffer(ID_WIDTH=2,USER_WI...
+Compiling module xil_defaultlib.axi_ar_buffer(ID_WIDTH=2,USER_WI...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=38,DATA_...
+Compiling module xil_defaultlib.axi_w_buffer(DATA_WIDTH=32,USER_...
+Compiling module xil_defaultlib.axi_r_buffer(ID_WIDTH=2,DATA_WID...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=5,DATA_D...
+Compiling module xil_defaultlib.axi_b_buffer(ID_WIDTH=2,USER_WID...
+Compiling module xil_defaultlib.axi_slice(AXI_DATA_WIDTH=32,AXI_...
+Compiling module xil_defaultlib.axi_slice_wrap(AXI_DATA_WIDTH=32...
+Compiling module xil_defaultlib.xilinx_spram(RAM_DEPTH=8192,INIT...
+Compiling module xil_defaultlib.sp_ram_wrap(INIT_FILE="test_sw_e...
+Compiling module xil_defaultlib.boot_code
+Compiling module xil_defaultlib.boot_rom_wrap
+Compiling module xil_defaultlib.instr_ram_wrap(INIT_FILE="test_s...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=66,DATA_...
+Compiling module xil_defaultlib.axi_aw_buffer(USER_WIDTH=1,BUFFE...
+Compiling module xil_defaultlib.axi_ar_buffer(USER_WIDTH=1,BUFFE...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=38,DATA_...
+Compiling module xil_defaultlib.axi_w_buffer(DATA_WIDTH=32,USER_...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=40,DATA_...
+Compiling module xil_defaultlib.axi_r_buffer(DATA_WIDTH=32,USER_...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=7,DATA_D...
+Compiling module xil_defaultlib.axi_b_buffer(USER_WIDTH=1,BUFFER...
+Compiling module xil_defaultlib.axi_write_only_ctrl(AXI4_RDATA_W...
+Compiling module xil_defaultlib.axi_read_only_ctrl(AXI4_RDATA_WI...
+Compiling module xil_defaultlib.axi_mem_if_SP(AXI4_ID_WIDTH=4,AX...
+Compiling module xil_defaultlib.axi_mem_if_SP_wrap(AXI_DATA_WIDT...
+Compiling module xil_defaultlib.ram_mux(ADDR_WIDTH=16)
+Compiling module xil_defaultlib.xilinx_spram(RAM_DEPTH=8192,INIT...
+Compiling module xil_defaultlib.sp_ram_wrap(INIT_FILE="test_sw_e...
+Compiling module xil_defaultlib.axi_write_only_ctrl(AXI4_RDATA_W...
+Compiling module xil_defaultlib.axi_read_only_ctrl(AXI4_RDATA_WI...
+Compiling module xil_defaultlib.axi_mem_if_SP(AXI4_ID_WIDTH=4,AX...
+Compiling module xil_defaultlib.axi_mem_if_SP_wrap(AXI_DATA_WIDT...
+Compiling module xil_defaultlib.ram_mux(ADDR_WIDTH=15)
+Compiling module xil_defaultlib.cluster_clock_inverter
+Compiling module xil_defaultlib.adbg_tap_top
+Compiling module xil_defaultlib.adbg_axi_biu(AXI_DATA_WIDTH=32,A...
+Compiling module xil_defaultlib.adbg_crc32
+Compiling module xil_defaultlib.adbg_axi_module(AXI_DATA_WIDTH=3...
+Compiling module xil_defaultlib.adbg_or1k_status_reg(NB_CORES=1)
+Compiling module xil_defaultlib.adbg_or1k_biu(NB_CORES=1)
+Compiling module xil_defaultlib.adbg_or1k_module(NB_CORES=1)
+Compiling module xil_defaultlib.adbg_top(NB_CORES=1,AXI_DATA_WID...
+Compiling module xil_defaultlib.adv_dbg_if(NB_CORES=1,AXI_DATA_W...
+Compiling module xil_defaultlib.core_region(AXI_DATA_WIDTH=32,AX...
+Compiling module xil_defaultlib.APB_BUS
+Compiling module xil_defaultlib.spi_slave_rx
+Compiling module xil_defaultlib.pulp_clock_inverter
+Compiling module xil_defaultlib.pulp_clock_mux2
+Compiling module xil_defaultlib.spi_slave_tx
+Compiling module xil_defaultlib.spi_slave_cmd_parser
+Compiling module xil_defaultlib.spi_slave_regs
+Compiling module xil_defaultlib.spi_slave_controller
+Compiling module xil_defaultlib.dc_data_buffer
+Compiling module xil_defaultlib.dc_token_ring
+Compiling module xil_defaultlib.dc_synchronizer
+Compiling module xil_defaultlib.dc_full_detector
+Compiling module xil_defaultlib.dc_token_ring_fifo_din(DATA_WIDT...
+Compiling module xil_defaultlib.dc_synchronizer(WIDTH=8)
+Compiling module xil_defaultlib.dc_token_ring_fifo_dout(DATA_WID...
+Compiling module xil_defaultlib.spi_slave_dc_fifo
+Compiling module xil_defaultlib.spi_slave_axi_plug(AXI_DATA_WIDT...
+Compiling module xil_defaultlib.spi_slave_syncro
+Compiling module xil_defaultlib.axi_spi_slave(AXI_DATA_WIDTH=32,...
+Compiling module xil_defaultlib.axi_spi_slave_wrap(AXI_DATA_WIDT...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=66,DATA_...
+Compiling module xil_defaultlib.axi_aw_buffer(USER_WIDTH=1)
+Compiling module xil_defaultlib.axi_ar_buffer(USER_WIDTH=1)
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=40,DATA_...
+Compiling module xil_defaultlib.axi_r_buffer(DATA_WIDTH=32,USER_...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=7,DATA_D...
+Compiling module xil_defaultlib.axi_b_buffer(USER_WIDTH=1,BUFFER...
+Compiling module xil_defaultlib.axi2apb32(AXI4_ID_WIDTH=4,AXI4_U...
+Compiling module xil_defaultlib.axi2apb_wrap(AXI_USER_WIDTH=1,AX...
+Compiling module xil_defaultlib.apb_node(NB_MASTER=9)
+Compiling module xil_defaultlib.apb_node_wrap(NB_MASTER=9)
+Compiling module xil_defaultlib.periph_bus_wrap_default
+Compiling architecture rtl of entity xil_defaultlib.slib_input_sync [slib_input_sync_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_input_filter [\slib_input_filter(size=2)\]
+Compiling architecture rtl of entity xil_defaultlib.uart_interrupt [uart_interrupt_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_edge_detect [slib_edge_detect_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_baudgen [uart_baudgen_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_clock_div [\slib_clock_div(ratio=8)\]
+Compiling architecture rtl of entity xil_defaultlib.slib_fifo [slib_fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_fifo [\slib_fifo(width=11)\]
+Compiling architecture rtl of entity xil_defaultlib.uart_transmitter [uart_transmitter_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_counter [slib_counter_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_mv_filter [slib_mv_filter_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_input_filter [slib_input_filter_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_receiver [uart_receiver_default]
+Compiling architecture rtl of entity xil_defaultlib.apb_uart [apb_uart_default]
+Compiling module xil_defaultlib.apb_gpio
+Compiling module xil_defaultlib.spi_master_apb_if(BUFFER_DEPTH=8...
+Compiling module xil_defaultlib.spi_master_fifo(BUFFER_DEPTH=8)
+Compiling module xil_defaultlib.spi_master_clkgen
+Compiling module xil_defaultlib.spi_master_tx
+Compiling module xil_defaultlib.spi_master_rx
+Compiling module xil_defaultlib.spi_master_controller
+Compiling module xil_defaultlib.apb_spi_master(BUFFER_DEPTH=8)
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.apb_timer_default
+Compiling module xil_defaultlib.generic_service_unit
+Compiling module xil_defaultlib.sleep_unit
+Compiling module xil_defaultlib.apb_event_unit
+Compiling module xil_defaultlib.i2c_master_bit_ctrl
+Compiling module xil_defaultlib.i2c_master_byte_ctrl
+Compiling module xil_defaultlib.apb_i2c
+Compiling module xil_defaultlib.apb_fll_if
+Compiling module xil_defaultlib.apb_pulpino
+Compiling module xil_defaultlib.apb2per(PER_ADDR_WIDTH=15)
+Compiling module xil_defaultlib.peripherals(AXI_DATA_WIDTH=32,AX...
+Compiling module xil_defaultlib.axi_FanInPrimitive_Req(AUX_WIDTH...
+Compiling module xil_defaultlib.axi_RR_Flag_Req(MAX_COUNT=3,WIDT...
+Compiling module xil_defaultlib.axi_ArbitrationTree(ID_WIDTH=5,N...
+Compiling module xil_defaultlib.axi_AR_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.axi_AW_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=5)
+Compiling module xil_defaultlib.axi_multiplexer(DATA_WIDTH=38,N_...
+Compiling module xil_defaultlib.axi_DW_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.axi_address_decoder_BW(AXI_ID_IN...
+Compiling module xil_defaultlib.axi_address_decoder_BR(N_TARG_PO...
+Compiling module xil_defaultlib.axi_request_block(AXI_DATA_W=32,...
+Compiling module xil_defaultlib.axi_FanInPrimitive_Req(AUX_WIDTH...
+Compiling module xil_defaultlib.axi_ArbitrationTree(AUX_WIDTH=3,...
+Compiling module xil_defaultlib.axi_BW_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.axi_FanInPrimitive_Req(AUX_WIDTH...
+Compiling module xil_defaultlib.axi_ArbitrationTree(AUX_WIDTH=36...
+Compiling module xil_defaultlib.axi_BR_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.axi_address_decoder_AR(N_INIT_PO...
+Compiling module xil_defaultlib.axi_address_decoder_AW(N_INIT_PO...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=3)
+Compiling module xil_defaultlib.axi_address_decoder_DW(N_INIT_PO...
+Compiling module xil_defaultlib.axi_response_block(AXI_DATA_W=32...
+Compiling module xil_defaultlib.axi_node(AXI_DATA_W=32,AXI_USER_...
+Compiling module xil_defaultlib.axi_node_intf_wrap(NB_MASTER=3,N...
+Compiling module xil_defaultlib.pulpino_top(USE_ZERO_RISCY=1,DAT...
+Compiling module xil_defaultlib.pulpino_nexys_a7
+Compiling module xil_defaultlib.pulpino_nexys_a7_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulpino_nexys_a7_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/xsim.dir/pulpino_nexys_a7_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/xsim.dir/pulpino_nexys_a7_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Apr 11 14:50:22 2023. For additional details about this file, please refer to the WebTalk help file at C:/Programs/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 92.316 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 11 14:50:22 2023...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:42 . Memory (MB): peak = 797.746 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '43' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulpino_nexys_a7_tb_behav -key {Behavioral:sim_1:Functional:pulpino_nexys_a7_tb} -tclbatch {pulpino_nexys_a7_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source pulpino_nexys_a7_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 799.355 ; gain = 1.609
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulpino_nexys_a7_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:01:18 . Memory (MB): peak = 799.355 ; gain = 1.609
+run 100 ms
+            12615000: Illegal instruction (core 0) at PC 0x00000080:
+Instruction is valid, but has at least one X
+run: Time (s): cpu = 00:02:29 ; elapsed = 00:08:03 . Memory (MB): peak = 841.695 ; gain = 28.684
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1028.922 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Programs/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulpino_nexys_a7_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/test_sw_emb_text.dat'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/test_sw_emb_data.dat'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/boot_code.dat'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/keys.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/S_box.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/S_box_inverted.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_16.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_32.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_133.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_148.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_192.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_194.mem'
+INFO: [SIM-utils-43] Exported 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim/L_251.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj pulpino_nexys_a7_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/config.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_mmcm_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.srcs/sources_1/ip/xilinx_mmcm/xilinx_mmcm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_mmcm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_crc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_crc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_tap_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adbg_tap_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_data_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_data_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_full_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_full_detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_synchronizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_token_ring.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_token_ring
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_token_ring_fifo_din.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_token_ring_fifo_din
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/submodules/axi/axi_slice_dc/dc_token_ring_fifo_dout.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dc_token_ring_fifo_dout
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/xilinx_spram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xilinx_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/config.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/apb_bus.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi2apb_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi2apb_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_mem_if_SP_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_mem_if_SP_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_node_intf_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_node_intf_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/boot_rom_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module boot_rom_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/core2axi_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core2axi_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/core_region.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_region
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/includes/debug_bus.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/instr_ram_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instr_ram_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/periph_bus_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module periph_bus_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/peripherals.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module peripherals
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/pulpino_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulpino_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documents/University/fpga/lab4/pulpino_students/rtl/sp_ram_wrap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_wrap
+"xvhdl --incr --relax -prj pulpino_nexys_a7_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1028.922 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1028.922 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Documents/University/fpga/lab4/pulpino_students/pulpino_nexys_a7_100t/pulpino_nexys_a7_100t.sim/sim_1/behav/xsim'
+"xelab -wto 6605eff7ee774639a38cbda8a993628f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pulpino_nexys_a7_tb_behav xil_defaultlib.pulpino_nexys_a7_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Programs/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 6605eff7ee774639a38cbda8a993628f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot pulpino_nexys_a7_tb_behav xil_defaultlib.pulpino_nexys_a7_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'cpu_clk_i' is not connected on this instance [D:/Documents/University/fpga/lab4/pulpino_students/rtl/core_region.sv:567]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/pulpino_top.sv" Line 20. Module pulpino_top(USE_ZERO_RISCY=1,DATA_RAM_INIT_FILE="test_sw_emb_data.dat",INSTR_RAM_INIT_FILE="test_sw_emb_text.dat") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/axi_bus.sv" Line 23. Module AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/axi_bus.sv" Line 23. Module AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/axi_bus.sv" Line 23. Module AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/axi_bus.sv" Line 23. Module AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/axi_bus.sv" Line 23. Module AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/axi_bus.sv" Line 23. Module AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/debug_bus.sv" Line 16. Module DEBUG_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/core_region.sv" Line 15. Module core_region(AXI_DATA_WIDTH=32,AXI_ID_MASTER_WIDTH=2,AXI_ID_SLAVE_WIDTH=4,AXI_USER_WIDTH=1,USE_ZERO_RISCY=1,DATA_RAM_INIT_FILE="test_sw_emb_data.dat",INSTR_RAM_INIT_FILE="test_sw_emb_text.dat")(core_master=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1)_Master,dbg_master=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1)_Master,data_slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Slave,instr_slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Slave) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/axi_bus.sv" Line 23. Module AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/core2axi_wrap.sv" Line 14. Module core2axi_wrap(AXI_USER_WIDTH=1,AXI_ID_WIDTH=2)(master=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1)_Master) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/instr_ram_wrap.sv" Line 14. Module instr_ram_wrap(INIT_FILE="test_sw_emb_text.dat") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/sp_ram_wrap.sv" Line 13. Module sp_ram_wrap(INIT_FILE="test_sw_emb_text.dat") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/boot_rom_wrap.sv" Line 14. Module boot_rom_wrap doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_mem_if_SP_wrap.sv" Line 13. Module axi_mem_if_SP_wrap(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1,MEM_ADDR_WIDTH=16)(slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Slave) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/sp_ram_wrap.sv" Line 13. Module sp_ram_wrap(INIT_FILE="test_sw_emb_data.dat") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_mem_if_SP_wrap.sv" Line 13. Module axi_mem_if_SP_wrap(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1,MEM_ADDR_WIDTH=15)(slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Slave) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adv_dbg_if.sv" Line 16. Module adv_dbg_if(NB_CORES=1,AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_ID_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_top.sv" Line 44. Module adbg_top(NB_CORES=1,AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_ID_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_axi_module.sv" Line 69. Module adbg_axi_module(AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_ID_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_axi_biu.sv" Line 66. Module adbg_axi_biu(AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_ID_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_module.sv" Line 69. Module adbg_or1k_module(NB_CORES=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_status_reg.sv" Line 68. Module adbg_or1k_status_reg(NB_CORES=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/adv_dbg_if/rtl/adbg_or1k_biu.sv" Line 59. Module adbg_or1k_biu(NB_CORES=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/peripherals.sv" Line 16. Module peripherals(AXI_DATA_WIDTH=32,AXI_USER_WIDTH=1,AXI_SLAVE_ID_WIDTH=4,AXI_MASTER_ID_WIDTH=2)(axi_spi_master=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1)_Master,slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Slave) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi2apb_wrap.sv" Line 13. Module axi2apb_wrap(AXI_USER_WIDTH=1,AXI_ID_WIDTH=4)(axi_slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Slave) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/periph_bus_wrap.sv" Line 13. Module periph_bus_wrap_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../rtl/includes/apb_bus.sv" Line 73. Module APB_BUS doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_gpio/apb_gpio.sv" Line 29. Module apb_gpio doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_event_unit/apb_event_unit.sv" Line 13. Module apb_event_unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb_fll_if/apb_fll_if.sv" Line 11. Module apb_fll_if doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/submodules/apb/apb2per/apb2per.sv" Line 28. Module apb2per(PER_ADDR_WIDTH=15) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Documents/University/fpga/lab4/pulpino_students/rtl/axi_node_intf_wrap.sv" Line 14. Module axi_node_intf_wrap(NB_MASTER=3,NB_SLAVE=3,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1)(slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1)_Slave,slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1)_Slave,slave=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=2,AXI_USER_WIDTH=1)_Slave,master=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Master,master=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Master,master=AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID_WIDTH=4,AXI_USER_WIDTH=1)_Master) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.riscv_defines
+Compiling package xil_defaultlib.zeroriscy_defines
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.xilinx_mmcm_clk_wiz
+Compiling module xil_defaultlib.xilinx_mmcm
+Compiling module xil_defaultlib.AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID...
+Compiling module xil_defaultlib.AXI_BUS(AXI_DATA_WIDTH=32,AXI_ID...
+Compiling module xil_defaultlib.DEBUG_BUS
+Compiling module xil_defaultlib.cluster_clock_mux2
+Compiling module xil_defaultlib.rstgen
+Compiling module xil_defaultlib.clk_rst_gen
+Compiling module xil_defaultlib.cluster_clock_gating
+Compiling module xil_defaultlib.zeroriscy_fetch_fifo
+Compiling module xil_defaultlib.zeroriscy_prefetch_buffer
+Compiling module xil_defaultlib.zeroriscy_compressed_decoder
+Compiling module xil_defaultlib.zeroriscy_if_stage
+Compiling module xil_defaultlib.zeroriscy_register_file_default
+Compiling module xil_defaultlib.zeroriscy_decoder
+Compiling module xil_defaultlib.zeroriscy_controller_1
+Compiling module xil_defaultlib.zeroriscy_int_controller
+Compiling module xil_defaultlib.zeroriscy_id_stage
+Compiling module xil_defaultlib.zeroriscy_alu
+Compiling module xil_defaultlib.zeroriscy_multdiv_fast
+Compiling module xil_defaultlib.zeroriscy_ex_block_default
+Compiling module xil_defaultlib.zeroriscy_load_store_unit
+Compiling module xil_defaultlib.zeroriscy_cs_registers_default
+Compiling module xil_defaultlib.zeroriscy_debug_unit
+Compiling module xil_defaultlib.zeroriscy_core_default
+Compiling module xil_defaultlib.core2axi(AXI4_ID_WIDTH=2,AXI4_US...
+Compiling module xil_defaultlib.core2axi_wrap(AXI_USER_WIDTH=1,A...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=64,DATA_...
+Compiling module xil_defaultlib.axi_aw_buffer(ID_WIDTH=2,USER_WI...
+Compiling module xil_defaultlib.axi_ar_buffer(ID_WIDTH=2,USER_WI...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=38,DATA_...
+Compiling module xil_defaultlib.axi_w_buffer(DATA_WIDTH=32,USER_...
+Compiling module xil_defaultlib.axi_r_buffer(ID_WIDTH=2,DATA_WID...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=5,DATA_D...
+Compiling module xil_defaultlib.axi_b_buffer(ID_WIDTH=2,USER_WID...
+Compiling module xil_defaultlib.axi_slice(AXI_DATA_WIDTH=32,AXI_...
+Compiling module xil_defaultlib.axi_slice_wrap(AXI_DATA_WIDTH=32...
+Compiling module xil_defaultlib.xilinx_spram(RAM_DEPTH=8192,INIT...
+Compiling module xil_defaultlib.sp_ram_wrap(INIT_FILE="test_sw_e...
+Compiling module xil_defaultlib.boot_code
+Compiling module xil_defaultlib.boot_rom_wrap
+Compiling module xil_defaultlib.instr_ram_wrap(INIT_FILE="test_s...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=66,DATA_...
+Compiling module xil_defaultlib.axi_aw_buffer(USER_WIDTH=1,BUFFE...
+Compiling module xil_defaultlib.axi_ar_buffer(USER_WIDTH=1,BUFFE...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=38,DATA_...
+Compiling module xil_defaultlib.axi_w_buffer(DATA_WIDTH=32,USER_...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=40,DATA_...
+Compiling module xil_defaultlib.axi_r_buffer(DATA_WIDTH=32,USER_...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=7,DATA_D...
+Compiling module xil_defaultlib.axi_b_buffer(USER_WIDTH=1,BUFFER...
+Compiling module xil_defaultlib.axi_write_only_ctrl(AXI4_RDATA_W...
+Compiling module xil_defaultlib.axi_read_only_ctrl(AXI4_RDATA_WI...
+Compiling module xil_defaultlib.axi_mem_if_SP(AXI4_ID_WIDTH=4,AX...
+Compiling module xil_defaultlib.axi_mem_if_SP_wrap(AXI_DATA_WIDT...
+Compiling module xil_defaultlib.ram_mux(ADDR_WIDTH=16)
+Compiling module xil_defaultlib.xilinx_spram(RAM_DEPTH=8192,INIT...
+Compiling module xil_defaultlib.sp_ram_wrap(INIT_FILE="test_sw_e...
+Compiling module xil_defaultlib.axi_write_only_ctrl(AXI4_RDATA_W...
+Compiling module xil_defaultlib.axi_read_only_ctrl(AXI4_RDATA_WI...
+Compiling module xil_defaultlib.axi_mem_if_SP(AXI4_ID_WIDTH=4,AX...
+Compiling module xil_defaultlib.axi_mem_if_SP_wrap(AXI_DATA_WIDT...
+Compiling module xil_defaultlib.ram_mux(ADDR_WIDTH=15)
+Compiling module xil_defaultlib.cluster_clock_inverter
+Compiling module xil_defaultlib.adbg_tap_top
+Compiling module xil_defaultlib.adbg_axi_biu(AXI_DATA_WIDTH=32,A...
+Compiling module xil_defaultlib.adbg_crc32
+Compiling module xil_defaultlib.adbg_axi_module(AXI_DATA_WIDTH=3...
+Compiling module xil_defaultlib.adbg_or1k_status_reg(NB_CORES=1)
+Compiling module xil_defaultlib.adbg_or1k_biu(NB_CORES=1)
+Compiling module xil_defaultlib.adbg_or1k_module(NB_CORES=1)
+Compiling module xil_defaultlib.adbg_top(NB_CORES=1,AXI_DATA_WID...
+Compiling module xil_defaultlib.adv_dbg_if(NB_CORES=1,AXI_DATA_W...
+Compiling module xil_defaultlib.core_region(AXI_DATA_WIDTH=32,AX...
+Compiling module xil_defaultlib.APB_BUS
+Compiling module xil_defaultlib.spi_slave_rx
+Compiling module xil_defaultlib.pulp_clock_inverter
+Compiling module xil_defaultlib.pulp_clock_mux2
+Compiling module xil_defaultlib.spi_slave_tx
+Compiling module xil_defaultlib.spi_slave_cmd_parser
+Compiling module xil_defaultlib.spi_slave_regs
+Compiling module xil_defaultlib.spi_slave_controller
+Compiling module xil_defaultlib.dc_data_buffer
+Compiling module xil_defaultlib.dc_token_ring
+Compiling module xil_defaultlib.dc_synchronizer
+Compiling module xil_defaultlib.dc_full_detector
+Compiling module xil_defaultlib.dc_token_ring_fifo_din(DATA_WIDT...
+Compiling module xil_defaultlib.dc_synchronizer(WIDTH=8)
+Compiling module xil_defaultlib.dc_token_ring_fifo_dout(DATA_WID...
+Compiling module xil_defaultlib.spi_slave_dc_fifo
+Compiling module xil_defaultlib.spi_slave_axi_plug(AXI_DATA_WIDT...
+Compiling module xil_defaultlib.spi_slave_syncro
+Compiling module xil_defaultlib.axi_spi_slave(AXI_DATA_WIDTH=32,...
+Compiling module xil_defaultlib.axi_spi_slave_wrap(AXI_DATA_WIDT...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=66,DATA_...
+Compiling module xil_defaultlib.axi_aw_buffer(USER_WIDTH=1)
+Compiling module xil_defaultlib.axi_ar_buffer(USER_WIDTH=1)
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=40,DATA_...
+Compiling module xil_defaultlib.axi_r_buffer(DATA_WIDTH=32,USER_...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=7,DATA_D...
+Compiling module xil_defaultlib.axi_b_buffer(USER_WIDTH=1,BUFFER...
+Compiling module xil_defaultlib.axi2apb32(AXI4_ID_WIDTH=4,AXI4_U...
+Compiling module xil_defaultlib.axi2apb_wrap(AXI_USER_WIDTH=1,AX...
+Compiling module xil_defaultlib.apb_node(NB_MASTER=9)
+Compiling module xil_defaultlib.apb_node_wrap(NB_MASTER=9)
+Compiling module xil_defaultlib.periph_bus_wrap_default
+Compiling architecture rtl of entity xil_defaultlib.slib_input_sync [slib_input_sync_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_input_filter [\slib_input_filter(size=2)\]
+Compiling architecture rtl of entity xil_defaultlib.uart_interrupt [uart_interrupt_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_edge_detect [slib_edge_detect_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_baudgen [uart_baudgen_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_clock_div [\slib_clock_div(ratio=8)\]
+Compiling architecture rtl of entity xil_defaultlib.slib_fifo [slib_fifo_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_fifo [\slib_fifo(width=11)\]
+Compiling architecture rtl of entity xil_defaultlib.uart_transmitter [uart_transmitter_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_counter [slib_counter_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_mv_filter [slib_mv_filter_default]
+Compiling architecture rtl of entity xil_defaultlib.slib_input_filter [slib_input_filter_default]
+Compiling architecture rtl of entity xil_defaultlib.uart_receiver [uart_receiver_default]
+Compiling architecture rtl of entity xil_defaultlib.apb_uart [apb_uart_default]
+Compiling module xil_defaultlib.apb_gpio
+Compiling module xil_defaultlib.spi_master_apb_if(BUFFER_DEPTH=8...
+Compiling module xil_defaultlib.spi_master_fifo(BUFFER_DEPTH=8)
+Compiling module xil_defaultlib.spi_master_clkgen
+Compiling module xil_defaultlib.spi_master_tx
+Compiling module xil_defaultlib.spi_master_rx
+Compiling module xil_defaultlib.spi_master_controller
+Compiling module xil_defaultlib.apb_spi_master(BUFFER_DEPTH=8)
+Compiling module xil_defaultlib.timer
+Compiling module xil_defaultlib.apb_timer_default
+Compiling module xil_defaultlib.generic_service_unit
+Compiling module xil_defaultlib.sleep_unit
+Compiling module xil_defaultlib.apb_event_unit
+Compiling module xil_defaultlib.i2c_master_bit_ctrl
+Compiling module xil_defaultlib.i2c_master_byte_ctrl
+Compiling module xil_defaultlib.apb_i2c
+Compiling module xil_defaultlib.apb_fll_if
+Compiling module xil_defaultlib.apb_pulpino
+Compiling module xil_defaultlib.apb2per(PER_ADDR_WIDTH=15)
+Compiling module xil_defaultlib.peripherals(AXI_DATA_WIDTH=32,AX...
+Compiling module xil_defaultlib.axi_FanInPrimitive_Req(AUX_WIDTH...
+Compiling module xil_defaultlib.axi_RR_Flag_Req(MAX_COUNT=3,WIDT...
+Compiling module xil_defaultlib.axi_ArbitrationTree(ID_WIDTH=5,N...
+Compiling module xil_defaultlib.axi_AR_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.axi_AW_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=5)
+Compiling module xil_defaultlib.axi_multiplexer(DATA_WIDTH=38,N_...
+Compiling module xil_defaultlib.axi_DW_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.axi_address_decoder_BW(AXI_ID_IN...
+Compiling module xil_defaultlib.axi_address_decoder_BR(N_TARG_PO...
+Compiling module xil_defaultlib.axi_request_block(AXI_DATA_W=32,...
+Compiling module xil_defaultlib.axi_FanInPrimitive_Req(AUX_WIDTH...
+Compiling module xil_defaultlib.axi_ArbitrationTree(AUX_WIDTH=3,...
+Compiling module xil_defaultlib.axi_BW_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.axi_FanInPrimitive_Req(AUX_WIDTH...
+Compiling module xil_defaultlib.axi_ArbitrationTree(AUX_WIDTH=36...
+Compiling module xil_defaultlib.axi_BR_allocator(AXI_USER_W=1,N_...
+Compiling module xil_defaultlib.axi_address_decoder_AR(N_INIT_PO...
+Compiling module xil_defaultlib.axi_address_decoder_AW(N_INIT_PO...
+Compiling module xil_defaultlib.generic_fifo(DATA_WIDTH=3)
+Compiling module xil_defaultlib.axi_address_decoder_DW(N_INIT_PO...
+Compiling module xil_defaultlib.axi_response_block(AXI_DATA_W=32...
+Compiling module xil_defaultlib.axi_node(AXI_DATA_W=32,AXI_USER_...
+Compiling module xil_defaultlib.axi_node_intf_wrap(NB_MASTER=3,N...
+Compiling module xil_defaultlib.pulpino_top(USE_ZERO_RISCY=1,DAT...
+Compiling module xil_defaultlib.pulpino_nexys_a7
+Compiling module xil_defaultlib.pulpino_nexys_a7_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulpino_nexys_a7_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 1028.922 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '25' seconds
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 1028.922 ; gain = 0.000
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:44 . Memory (MB): peak = 1028.922 ; gain = 0.000
+run 100 ms
+run: Time (s): cpu = 00:00:56 ; elapsed = 00:02:50 . Memory (MB): peak = 1028.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 15:55:12 2023...
